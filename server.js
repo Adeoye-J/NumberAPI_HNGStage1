@@ -55,7 +55,7 @@ app.get("/api/classify-number", async (req, res) => {
 
     try {
         // Fetch fun fact
-        const factResponse = await axios.get(`http://numbersapi.com/${num}/math`);
+        const factResponse = await axios.get(`http://numbersapi.com/${num}/trivia`);
         const fun_fact = factResponse.data;
 
         // Response
